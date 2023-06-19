@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes marquee {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee {
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+body {
+  background-color: #000300;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
