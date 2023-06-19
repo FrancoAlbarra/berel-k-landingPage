@@ -1,6 +1,5 @@
 import React from 'react';
 import Typed from 'react-typed';
-import backgroundImage from '../assets/bg.jpg';
 import box from '../assets/BOX.png';  // Ruta del asset de la imagen de fondo
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';

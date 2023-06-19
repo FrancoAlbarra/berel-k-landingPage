@@ -14,19 +14,18 @@ const Newsletter = () => {
     }}>
       <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
         <div className='lg:col-span-2 my-4'>
-          <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>
-            Descargá el catálogo y descubrí<br /> nuestra ultima Colección
+          <h1 className='md:text-4xl text-3xl text-2xl font-bold py-2'>
+            Descargá el catálogo y descubrí<br /> nuestra última colección.
           </h1>
-          <p>Descubrí los últimos lanzamientos y todos nuestros productos catalogados.</p>
+          <p>Descubrí nuestras últimos lanzamientos y mirá toda la variedad de todos <br />nuestros productos en nuestro catálogo.</p>
         </div>
-        <div className='my-4 flex flex-col'>
+        <div className='my-4 ml-20 flex flex-col'>
             <button className='bg-[#244596] text-white rounded-md font-medium w-[200px] my-6 px-6 py-3' onClick={handleDownload}>
               Descargar Catálogo
             </button>
           <p>
-            Peso aproximado del archivo - 10mb.
-            Si no puedes descargarlo presionando
-            <span className='text-[#e60180]' onClick={handleDownload}>  Aqui.</span>
+              Si no podés descargarlo presioná 
+            <span className='text-[#e60180]' onClick={handleDownload}>  Aquí.</span>
           </p>
         </div>
       </div>

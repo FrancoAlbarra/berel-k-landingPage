@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
         <div className='flex flex-col items-center'>
         <img className='md:w-[500px] md:pt-[100px] w-[350px] pb-[20px]' src={box} alt='/' />
-        <button className="flex items-center justify-center bg-[#00df9a]  h-[60px] md:h-[80px] md:w-[500px] w-[300px] text-[20px] md:text-[25px] rounded-md font-medium mb-4" onClick={handleRedirect}>
+        <button className="flex items-center justify-center bg-[#25d366]  h-[60px] md:h-[80px] md:w-[500px] w-[300px] text-[20px] md:text-[25px] rounded-md font-medium mb-4" onClick={handleRedirect}>
               <FontAwesomeIcon icon={faWhatsapp} className="mr-5 text-[40px] md:text-[60px]" />
               Enviar Whatsapp
             </button>
