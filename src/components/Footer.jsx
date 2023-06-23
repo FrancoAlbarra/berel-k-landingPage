@@ -9,7 +9,7 @@ const Footer = () => {
       <div>
         <h1 className='w-full text-3xl font-bold text-[#ffffff]'>BEREL-K.</h1>
         <p className='py-4'>Somos una empresa familiar de hace más de 50 años que estamos en constante evolución y desarrollo de nuevos productos. Estamos permanentemente en búsqueda de innovar en todos los aspectos de la producción y diseño.</p>
-        <p className='py-1 pb-10'>Nuestro horario de atención es <strong>lunes</strong> a <strong>viernes</strong> de 8.45 a 18.15 <strong>sábado</strong> de 9.45 a 14.15hs. ¡Venite a conocernos cuando quieras!</p>
+        <p className='py-1 pb-10'>Nuestro horario de atención es <strong>lunes</strong> a <strong>viernes</strong> de 8.45 a 18.15 <strong>y sábados</strong> de 9.45 a 14.15hs. ¡Venite a conocernos cuando quieras!</p>
         <div className='flex flex-row pt-5 items-center'>
           <img className='h-12 md:w-17 md:h-12 w-[50px] mr-5' src={location} alt='/' />
           <p className='py-4'>Sarmiento 2885, C1196 AAA, Buenos Aires</p>

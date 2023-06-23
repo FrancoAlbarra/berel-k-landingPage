@@ -17,7 +17,7 @@ const Newsletter = () => {
           <h1 className='md:text-4xl text-3xl text-2xl font-bold py-2'>
             Descargá el catálogo y descubrí<br /> nuestra última colección.
           </h1>
-          <p>Descubrí nuestras últimos lanzamientos y mirá toda la variedad de todos <br />nuestros productos en nuestro catálogo.</p>
+          <p>Descubrí nuestros últimos lanzamientos y mirá la amplia variedad de todos nuestros productos…</p>
         </div>
         <div className='my-4 ml-20 flex flex-col'>
             <button className='bg-[#244596] text-white rounded-md font-medium w-[200px] my-6 px-6 py-3' onClick={handleDownload}>
