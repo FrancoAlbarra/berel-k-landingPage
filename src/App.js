@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       {/* <AlertTop /> */}
-      <Navbar />
+      
       <Hero />
       <Productos />
       <Analytics />
