@@ -36,7 +36,7 @@ const Hero = () => {
       backgroundImage: `url(${backgroundImage})`,
     }}>
       <Navbar />
-      <div className='w-full md:mt-[-400px] flex flex-col md:flex-row h-screen justify-center items-center md:px-[100px] px-[20px]'>
+      <div className='w-full md:mt-[-250px] flex flex-col md:flex-row h-screen justify-center items-center md:px-[100px] px-[20px]'>
         <div className='w-full pt-[200px] md:pt-[90px] mx-auto text-start flex flex-col justify-center items-start'>
           <p className='text-[#e80083] text-[2vh] font-bold p-2'>
             <span className="text-[#ffffff]">SOMOS</span> BEREL-K
