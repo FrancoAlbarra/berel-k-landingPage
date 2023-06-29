@@ -18,3 +18,15 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+.circulo-whatsapp {
+  position: fixed;
+  bottom: 20px; /* Ajusta la posición vertical según tus necesidades */
+  right: 20px; /* Ajusta la posición horizontal según tus necesidades */
+  z-index: 999; /* Ajusta el valor del índice Z según sea necesario */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.circulo-whatsapp.show {
+  opacity: 1;
+}

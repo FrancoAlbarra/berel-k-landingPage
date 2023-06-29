@@ -23,10 +23,7 @@ const Newsletter = () => {
             <button className='bg-[#244596] text-white rounded-md font-medium w-[200px] my-6 px-6 py-3' onClick={handleDownload}>
               Descargar Catálogo 
             </button>
-          <p>
-              Si no podés descargarlo presioná  
-            <button className='text-[#e60180] pl-3' onClick={handleDownload}> Aquí.</button>
-          </p>
+
         </div>
       </div>
     </div>
