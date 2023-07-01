@@ -1,7 +1,7 @@
 import React from 'react';
 import Typed from 'react-typed';
 import backgroundImage from '../assets/bgd.jpg';
-import box from '../assets/BOX.png';
+import boton from '../assets/boton.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import logo from '../assets/logo.png';
@@ -21,9 +21,9 @@ const handleDownload = () => {
 
 const Navbar = () => {
   return (
-    <div className='flex md:justify-between md:flex-row flex-col items-center md:mr-20 md:ml-20 h-[80px] md:h-[100px] max-w-[full] mx-auto mb-[170px] md:pt-[100px] md:pb-[40px] px-4 text-white'>
+    <div className='flex lg:justify-between lg:flex-row flex-col items-center lg:mr-20 lg:ml-20 h-[80px] lg:h-[100px] max-w-[full] mx-auto mb-[170px] lg:pt-[100px] lg:pb-[40px] px-4 text-white'>
       <img className='w-[150px] my-4 ml-[10px]' src={logo} alt='/' />
-      <button className='bg-[#244596] md:mr-[40px] text-white rounded-md font-medium w-[200px] my-6 px-6 py-3' type="button" onClick={handleDownload}>
+      <button className='bg-[#244596] lg:mr-[40px] text-white rounded-lg font-medium w-[200px] my-6 px-6 py-3' type="button" onClick={handleDownload}>
               Descargar Catálogo 
             </button>
     </div>
@@ -36,20 +36,27 @@ const Hero = () => {
       backgroundImage: `url(${backgroundImage})`,
     }}>
       <Navbar />
-      <div className='w-full md:mt-[-250px] mt-[-200px] flex flex-col md:flex-row h-screen justify-center items-center md:px-[100px] px-[20px]'>
-        <div className='w-full mt-[10px] md:pt-[90px] mx-auto flex flex-col justify-center md:items-start items-center'>
+      <div className='w-full lg:mt-[-250px] md:mt-[-250px] mt-[-200px] flex flex-col lg:flex-row h-screen justify-center items-center lg:px-[100px] px-[20px]'>
+        <div className='w-full md:pt-[350px] mt-[10px] lg:pt-[90px] mx-auto flex flex-col justify-center lg:items-start items-center'>
           <p className='text-[#e80083] text-[3vh] font-bold p-2'>
             <span className="text-[#ffffff]">SOMOS</span> BEREL-K
           </p>
-          <h1 className='md:text-7xl text-[6vh] font-bold py-7 md:py-3 leading-[1]'>
+          <h1 className='lg:text-7xl text-[6vh] font-bold py-7 lg:py-3 leading-[1] md:text-center lg:text-left'>
             VENTA MAYORISTA <br />DE CALZADOS
           </h1>
-          <p className='md:text-2xl text-[2vh] font-semiBold text-white mb-4'>Somos fabricantes de pantuflas y ojotas. Realizamos envíos a todo el país.</p>
+          <p className='lg:text-2xl text-[2vh] font-semiBold text-white mb-4'>Somos fabricantes de pantuflas y ojotas.<br />Realizamos envíos a todo el país.</p>
         </div>
-        <div className='flex flex-col items-center'>
-          <img className='md:w-[60vh] md:pt-[120px] w-[40vh] pb-[20px]' src={box} alt='/' />
-          <button className="flex items-center md:mb-[0px] mb-[-250px] justify-center bg-[#25d366] h-[60px] md:h-[80px] md:w-[500px] w-[300px] text-[20px] md:text-[25px] rounded-md font-medium mb-4" type="button"  onClick={handleRedirect}>
-            <FontAwesomeIcon icon={faWhatsapp} className="mr-5 text-[40px] md:text-[60px]" />
+        <div className='flex flex-col items-center lg:mt-[150px] md:mt-[60px]'>
+          {/* <img className='md:w-[60vh] md:pt-[120px] w-[40vh] pb-[20px]' src={box} alt='/' /> */}
+          <div className='flex md:flex-row flex-col mb-[50px] justify-between items-center'>
+            <div className='flex flex-col'>
+              <h1 className='leading-none font-bold font-poppins lg:text-[6vh] text-[6vh]'>Envianos un<br /> WhatsApp</h1>
+              <p className='font-seminormal leading-none font-poppins lg:text-[3vh] text-[2vh] mt-4'>Nos encantaría asesorarte y<br /> responder todas tus inquietudes</p>
+            </div>
+            <img className='lg:w-[9vh] lg:h-[9vh] md:ml-[30px] w-[12vh]' src={boton} alt='/' />
+          </div>
+          <button className="flex items-center md:mb-[1px] lg:mb-[0px] mb-[-250px] justify-center bg-[#25d366] h-[60px] md:h-[80px] md:w-[500px] w-[300px] text-[20px] md:text-[25px] rounded-md font-medium mb-4" type="button"  onClick={handleRedirect}>
+            <FontAwesomeIcon icon={faWhatsapp} className="mr-5 text-[40px] lg:text-[60px]" />
             Enviar Whatsapp
           </button>
         </div>
