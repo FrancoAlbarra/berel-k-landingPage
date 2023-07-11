@@ -58,27 +58,36 @@ const Productos = () => {
 
   const renderNormalView = () => {
     return (
-      <div className='text-white w-screen h-screen bg-cover bg-no-repeat bg-center' style={{
+      <div className='text-white w-screen min-h-screen bg-cover bg-no-repeat bg-center items-center justify-center' style={{
         backgroundImage: `url(${backgroundImage})`,
       }}>
-        <div className="w-full mx-auto py-20 px-20 gap-5 lg:grid lg:grid-cols-3 grid-cols-2 space-y-10">
-          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat" style={{ maxWidth: "100%"}}>
-            <img className="w-full h-90 lg:pt-[45px] object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110" src={foto1} alt=""/>
+        <div className="w-full mx-auto py-20 px-20 gap-6 lg:grid lg:grid-cols-3 grid-cols-2 ">
+        <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat">
+          <div className="w-full h-90 lg:h-full flex items-center justify-center flex-col">
+            <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px]'>MICROFIBRA CON GUARDA PAMPA</h1>
+            <img className="object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto1} alt=""/>
           </div>
-          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat" style={{ maxWidth: "100%"}}>
-            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110" src={foto4} alt=""/>
+        
+        </div>
+          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
+            <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px]'>ZUECOS GOMÓN CON CORDERITO</h1>
+            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto4} alt=""/>
           </div>
-          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat" style={{ maxWidth: "100%"}}>
-            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110" src={foto3} alt=""/>
+          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
+                <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px]'>PANTUFLA BOTITA</h1>
+            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto3} alt=""/>
           </div>
-          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat" style={{ maxWidth: "100%"}}>
-            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110" src={foto2} alt=""/>
+          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
+          <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px] text-center'>PANTUFLONES INFANTILES 3D<br/>PERSONAJES Y ANIMALES</h1>
+          <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto2} alt=""/>
           </div>
-          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat" style={{ maxWidth: "100%"}}>
-            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110" src={foto5} alt=""/>
+          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
+                        <h1 className='font-poppins text-black font-bold text-[3vh] m-[25px]'>BOTA PON PON</h1>
+            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto5} alt=""/>
           </div>
-          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat" style={{ maxWidth: "100%"}}>
-            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110" src={foto6} alt=""/>
+          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
+                        <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px] text-center'>PANTUFLONES INFANTILES 3D<br/>PERSONAJES Y ANIMALES</h1>
+            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto6} alt=""/>
           </div>
         </div>
       </div>

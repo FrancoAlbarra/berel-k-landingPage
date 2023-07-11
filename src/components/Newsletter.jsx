@@ -2,6 +2,9 @@ import React from 'react';
 import backgroundImage from '../assets/bgCat.jpg';
 import pdfFile from '../assets/CATALOGO_INVIERNO_2023.pdf';
 import pdfFile2 from '../assets/CATALOGO_VERANO_2023.pdf';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSnowflake , faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons';
+
 const Newsletter = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -24,14 +27,16 @@ const Newsletter = () => {
           <h1 className='md:text-4xl text-3xl text-2xl font-bold py-2'>
             Descargá el catálogo y descubrí<br /> nuestra última colección.
           </h1>
-          <p>Descubrí nuestros últimos lanzamientos y mirá la amplia variedad<br /> de todos nuestros productos…</p>
+          <p>¡Descubre nuestros últimos lanzamientos y explora la amplia variedad de productos,<br />  Desde pantuflas y pantuflones cálidos hasta botas de lluvia y zuecos resistentes, tenemos <br />todo lo que necesitas para mantenerte abrigado(a) y a la moda durante esta temporada fría.<br /> ¡No te pierdas nuestros últimos lanzamientos!</p>
         </div>
-        <div className='my-4 ml-[150px] flex lg:flex-col flex-row '>
-            <button className='bg-[#244596] text-white rounded-md font-medium w-[200px] my-6 px-6 py-3' onClick={handleDownload}>
-              Descargar Catálogo 
+        <div className='my-4 lg:ml-[150px] flex lg:flex-col flex-col md:flex-row items-center'>
+            <button className='bg-[#244596] text-white rounded-md font-medium w-[280px] my-6 px-6 py-3' onClick={handleDownload}>
+              Descargar Catálogo Invierno
+              <FontAwesomeIcon icon={faSnowflake} className='ml-2'/>
             </button>
-            <button className='text-[#244596] bg-white rounded-md lg:ml-[0px] md:ml-[50px] font-medium w-[250px] my-6 px-6 py-3' onClick={handleDownloadV}>
+            <button className='text-[#244596] bg-white rounded-md lg:ml-[0px] md:ml-[50px] font-medium w-[280px] my-6 px-6 py-3' onClick={handleDownloadV}>
               Descargar Catálogo Verano
+              <FontAwesomeIcon icon={faUmbrellaBeach} className='ml-2' />
             </button>
         </div>
       </div>
