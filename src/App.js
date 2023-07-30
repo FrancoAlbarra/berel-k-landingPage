@@ -7,17 +7,21 @@ import CirculoWhatsApp from './components/botonwp';
 import Newsletter from './components/Newsletter';
 import AlertTop from './components/TopAlert';
 import Productos from './components/Productos';
-
+import ReactGA from 'react-ga';
 function App() {
   const [showCirculoWhatsApp, setShowCirculoWhatsApp] = useState(false);
   const productosRef = useRef(null);
 
+  
   useEffect(() => {
     const handleScroll = () => {
       const productosElement = productosRef.current;
       const productosRect = productosElement.getBoundingClientRect();
       const shouldShowCirculoWhatsApp = productosRect.top <= window.innerHeight; // Verifica si Productos está en la pantalla
-
+      ReactGA.event({
+        category: 'Scroll',
+        action: 'Scroll',
+      });
       setShowCirculoWhatsApp(shouldShowCirculoWhatsApp);
     };
 

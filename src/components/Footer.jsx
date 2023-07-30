@@ -2,9 +2,14 @@ import React from 'react';
 import location from '../assets/location.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
+import ReactGA from 'react-ga';
 const Footer = () => {
   const handleRedirect = () => {
+    ReactGA.event({
+      category: 'Boton_WhatsApp_Inferior',
+      action: 'Click',
+      label: 'Boton_WhatsApp_Inferior',
+    });
     window.open('https://api.whatsapp.com/send?phone=5491148653833&text=Hola%21+Quisiera+solicitar+informaci%C3%B3n+sobre+sus+productos', '_blank');
   };
   return (

@@ -47,10 +47,7 @@ const Productos = () => {
         <div class="relative max-hover flow-hidden bg-cover bg-no-repeat">
           <img class="w-full h-full rounded-lg transition duration-300 ease-in-out hover:scale-110 rounded-lg" src={foto4} alt=""/>
         </div>
-    
-        
-       
-        
+
       </Slider>
       </div>
     );
@@ -63,31 +60,30 @@ const Productos = () => {
       }}>
         <div className="w-full mx-auto py-20 px-20 gap-6 lg:grid lg:grid-cols-3 grid-cols-2 ">
         <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat">
-          <div className="w-full h-90 lg:h-full flex items-center justify-center flex-col">
-            <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px]'>MICROFIBRA CON GUARDA PAMPA</h1>
-            <img className="object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto1} alt=""/>
+          <div className="flex items-center justify-center flex-col">
+            <h1 className='font-poppins text-center text-black font-bold text-[2.5vh] mb-[15px] leading-5'>MICROFIBRA CON GUARDA PAMPA</h1>
+            <img className="object-cover rounded-lg transition duration-300  ease-in-out hover:scale-105 " src={foto1} alt=""/>
           </div>
         
         </div>
           <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
-            <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px]'>ZUECOS GOMÓN CON CORDERITO</h1>
-            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto4} alt=""/>
+            <h1 className='font-poppins text-black font-bold text-[2.5vh] mb-[15px] leading-5'>ZUECOS GOMÓN CON CORDERITO</h1>
+            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-105" src={foto4} alt=""/>
           </div>
           <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
-                <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px]'>PANTUFLA BOTITA</h1>
-            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto3} alt=""/>
+                <h1 className='font-poppins text-black font-bold text-[2.5vh] mb-[15px] leading-5'>PANTUFLA BOTITA</h1>
+            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-105 " src={foto3} alt=""/>
+          </div>          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
+          <h1 className='font-poppins text-black font-bold text-[2.5vh] mb-[30px] text-center leading-5'>PANTUFLONES INFANTILES 3D<br/>PERSONAJES Y ANIMALES</h1>
+          <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-105" src={foto2} alt=""/>
           </div>
           <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
-          <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px] text-center'>PANTUFLONES INFANTILES 3D<br/>PERSONAJES Y ANIMALES</h1>
-          <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto2} alt=""/>
+                        <h1 className='font-poppins text-black font-bold text-[2.5vh] m-[25px] leading-5'>BOTA PON PON</h1>
+            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-105" src={foto5} alt=""/>
           </div>
           <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
-                        <h1 className='font-poppins text-black font-bold text-[3vh] m-[25px]'>BOTA PON PON</h1>
-            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto5} alt=""/>
-          </div>
-          <div className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat flex-col">
-                        <h1 className='font-poppins text-black font-bold text-[3vh] mb-[15px] text-center'>PANTUFLONES INFANTILES 3D<br/>PERSONAJES Y ANIMALES</h1>
-            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110 max-h-full" src={foto6} alt=""/>
+            <h1 className='font-poppins text-black font-bold text-[2.5vh] mb-[30px] text-center leading-5'>PANTUFLONES INFANTILES 3D<br/>PERSONAJES Y ANIMALES</h1>
+            <img className="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-105" src={foto6} alt=""/>
           </div>
         </div>
       </div>
